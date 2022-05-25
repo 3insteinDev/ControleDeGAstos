@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página de Controle</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+	<style>
+		* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		box-sizing: border-box
+		}
+		.caixa1{
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			background-color: #3b5998;
+		}
+	</style>
+</head>
+<body class="bg-dark">
+	<%- include('../partials/header.ejs') %>
+	<main class="bg-dark p-3">
+		<div class="caixa1 ">			
+			<div >
+				<div class="card mt-3 mb-3" style="width: 25rem;">
+					
+					<div class="card-body">
+					  <h5 class="card-title">Controller</h5>
+					  <p class="card-text">Adicione em cada item o valor do seu gasto e a descrição do gasto</p>
+					</div>
+					<table class="table text-center">
+						<thead>
+						  <tr>
+							<th scope="col">#</th>
+							<th scope="col">Data</th>
+							<th scope="col">Descrição</th>
+							<th scope="col">Valor</th>
+							<th scope="col">Ações</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row">1</th>
+							<td>15/01</td>
+							<td>Sorvete</td>
+							<td>18,00</td>
+							<td>Botões</td>
+						  </tr>
+						  <tr>
+							<th scope="row">2</th>
+							<td>17/01</td>
+							<td>Supermercado</td>
+							<td>145,00</td>
+							<td>Botões</td>
+						  </tr>
+						  <tr>
+							<th scope="row">3</th>
+							<td >20/01</td>
+							<td >Posto</td>
+							<td> 90,00</td>
+							<td> Botões</td>
+						  </tr>
+						  <tr>
+							<th scope="row"colspan="3">Somando seus gastos</th>
+							<th scope="row">253,00 </th>
+							<td> </td>
+						  </tr>
+						</tbody>
+					  </table>
+					<!-- <div class="card-body">
+					  <a href="#" class="card-link">Card link</a>
+					  <a href="#" class="card-link">Another link</a>
+					</div> -->
+				  </div>
+			</div>
+		</div>
+	</main>
+
+	<%- include('../partials/footer.ejs') %>
+	
+
+	  	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+	  
+</body>
+</html>
